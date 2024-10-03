@@ -1,7 +1,8 @@
-#include <string>
 #include <vector>
-#include "PhoneNumber.hpp";
-#include "address.hpp";
+
+#include "PhoneNumber.hpp"
+#include "Address.hpp"
+#include "Book.hpp"
 
 using namespace std;
 
@@ -12,12 +13,12 @@ public:
 	string get_name();
 	string get_phone_number();
 	void print_full_address();
-	// Add book later
+	void add_book(Book book);
+	void print_available_books();
 
 private:
 	string name;
 	PhoneNumber *phone_number;
 	Address *address;
-	// Add book later
-
+	vector<Book> available_books;
 };

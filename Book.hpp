@@ -1,13 +1,13 @@
 #include <iostream>
-using namespade std;
+using namespace std;
 
-class Book{
-  public:
-  string pretty_print();
-  Book(string title, string author,boolean fiction); 
+class Book {
+public:
+	string pretty_print();
+	Book(string title, string author, bool fiction);
 
-  private: 
-  string title;
-  string author;
-  boolean fiction;
-}
+private:
+	string title;
+	string author;
+	bool fiction;
+};

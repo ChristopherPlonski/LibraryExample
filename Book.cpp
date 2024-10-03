@@ -1,11 +1,12 @@
+#include "Book.hpp"
 #include <iostream>
-#include <book.hpp>
-using namespade std;
 
-Book:: Book(string title, string author,boolean fiction){
-  this-> string title;
-  this-> string author;
-  this-> boolean fiction;
+using namespace std;
+
+Book::Book(string title, string author,bool fiction){
+  this-> title = title;
+  this-> author = author;
+  this-> fiction = fiction;
 }
 
 Book :: pretty_print(){
